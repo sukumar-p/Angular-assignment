@@ -1,0 +1,23 @@
+table{
+    border: 1px solid black;
+    width: 100%;
+
+}
+.Regular{
+    color: blue;
+}
+.Chocolate{
+    color: brown;
+}
+.Blueberry{
+    color: crimson;
+}
+.Maple{
+    color: chocolate;
+}
+li{
+    list-style: none;
+}
+.devils-find{
+    color: darkmagenta;
+}

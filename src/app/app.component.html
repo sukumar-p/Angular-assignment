@@ -1,0 +1,80 @@
+<!--The content below is only a placeholder and can be replaced.-->
+
+<div class="container">
+  <table border="1">
+   <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Batters</th>
+        <th>Toppings</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr *ngFor="let data of Newjson;">
+        <td >
+          {{data.type}}  
+        </td>
+        <td>
+              {{data.name}}  
+          </td>
+          <td>
+               <ul *ngFor="let item of data.batters.batter;" [ngClass]="{'devils-find':item.type==='Devil\'s Food'}">
+                 <li [ngClass]="item.type">
+                    {{item.type}} 
+                 </li>
+               </ul>
+            </td>
+            <td>
+                <ul *ngFor="let y of data.topping;">
+                    <li>
+                       {{y.type}} 
+                    </li>
+                  </ul>
+              </td>
+
+     </tr>
+     <!-- <tr *ngFor="let data of Newjson;">
+       
+        <td>
+              {{data.name}}  
+          </td> -->
+          <!-- <td>
+              <ul *ngFor="let item of data.batters.batter;">
+                <li [ngClass]="item.isColor">
+                   {{item.type}} 
+                </li>
+              </ul>
+           </td> -->
+           <!-- <td>
+               <ul *ngFor="let y of data.topping;">
+                   <li  [ngClass]="y.isColor">
+                      {{y.type}} 
+                   </li>
+                 </ul>
+             </td> -->
+
+     <!-- </tr> -->
+     <!-- <tr *ngFor="let data of Newjson;">
+        
+        <td>
+              {{data.name}}  
+          </td> -->
+          <!-- <td>
+              <ul *ngFor="let item of data.batters.batter;">
+                <li [ngClass]="item.isColor" >
+                   {{item.type}} 
+                </li>
+              </ul>
+           </td> -->
+           <!-- <td>
+               <ul *ngFor="let y of data.topping;">
+                   <li  [ngClass]="y.isColor">
+                      {{y.type}} 
+                   </li>
+                 </ul>
+             </td> -->
+     <!-- </tr> -->
+   </tbody>
+  </table>
+</div>
