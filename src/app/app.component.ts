@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { FormsModule} from '@angular/forms';
 
 
 @Component({
@@ -14,6 +15,8 @@ public url:any=["../assets/images/image.jpeg","../assets/images/danger.jpeg","..
 public displayimage:any=["../assets/images/image.jpeg"];
 public setimage:boolean=true;
 public i:any=1;
+
+
 Newjson=[
     {
       "id": "0001",
@@ -92,22 +95,24 @@ Newjson=[
     this.newtext=null;
    
   }
-  clickFunction(){
-  //   if(this.setimage){
+//   clickFunction(){
+//   //   if(this.setimage){
   
   
 
-  // }
-  // else{
-  //   this.displayimage=this.url[0];
-  //   this.setimage=!this.setimage;
-  // }
+//   // }
+//   // else{
+//   //   this.displayimage=this.url[0];
+//   //   this.setimage=!this.setimage;
+//   // }
 
 
-  this.i<this.url.length ?this.displayimage=this.url[this.i]:this.displayimage=this.url[this.i=0];
-  this.i++;
+//   this.i<this.url.length ?this.displayimage=this.url[this.i]:this.displayimage=this.url[this.i=0];
+//   this.i++;
  
-}
+// }
+
+
 }
 
 

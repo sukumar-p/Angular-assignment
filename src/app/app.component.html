@@ -1,7 +1,10 @@
 <!--The content below is only a placeholder and can be replaced.-->
 
-<div class="container">
-  <table border="1">
+ <!-- <div class="container">
+
+
+
+ <table border="1">
    <thead>
       <tr>
         <th>Type</th>
@@ -33,8 +36,10 @@
                   </ul>
               </td>
 
-     </tr>
-     <!-- <tr *ngFor="let data of Newjson;">
+     </tr> 
+    </tbody>
+  </table> -->
+     <!-- <tr *ngFor="let data of Newjson;">localStorage.setItem('email',)
        
         <td>
               {{data.name}}  
@@ -45,36 +50,46 @@
                    {{item.type}} 
                 </li>
               </ul>
-           </td> -->
-           <!-- <td>
+           </td> 
+            <td>
                <ul *ngFor="let y of data.topping;">
                    <li  [ngClass]="y.isColor">
                       {{y.type}} 
                    </li>
                  </ul>
-             </td> -->
+             </td>
 
-     <!-- </tr> -->
-     <!-- <tr *ngFor="let data of Newjson;">
+     </tr>
+    <tr *ngFor="let data of Newjson;">
         
         <td>
               {{data.name}}  
-          </td> -->
-          <!-- <td>
+          </td>
+           <td>
               <ul *ngFor="let item of data.batters.batter;">
                 <li [ngClass]="item.isColor" >
                    {{item.type}} 
                 </li>
               </ul>
-           </td> -->
-           <!-- <td>
+           </td> 
+           <td>
                <ul *ngFor="let y of data.topping;">
                    <li  [ngClass]="y.isColor">
                       {{y.type}} 
                    </li>
                  </ul>
-             </td> -->
-     <!-- </tr> -->
-   </tbody>
-  </table>
-</div>
+             </td>
+     </tr>  -->
+     
+
+   
+
+<!-- <new-component></new-component> -->
+<!-- </div> -->
+
+<div>
+    <router-outlet></router-outlet>
+  </div>
+
+
+

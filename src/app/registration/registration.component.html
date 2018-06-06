@@ -1,0 +1,47 @@
+<form [formGroup]="registrationForm" (ngSubmit)="register()">
+  <div class="form-group">
+    <label>
+      Email
+    </label>
+    <input class="form-control" formControlName="email" placeholder="Email" type="email">
+    <!-- <span style="color : red">
+      Please Enter Email Address
+    </span> -->
+  </div>
+  <div class="form-group">
+    <label>
+      Mobile
+    </label>
+    <input class="form-control" formControlName="mobile" placeholder="Mobile" type='text' required>
+  </div>
+  <div class="form-group">
+    <label>
+      Password
+    </label>
+    <input class="form-control" formControlName="password" placeholder="password" type="password" required>
+  </div>
+  <div>
+    <button class="btn btn-primary" [disabled]="registrationForm.invalid" style="width: 15%">
+      Register
+    </button>
+  </div>
+</form>
+<div>
+  <button class="btn btn-primary" (click)="loginclick()" style="margin-top:10px ; width: 15%">
+    Login
+  </button>
+</div>
+
+
+<div *ngFor="let i of sometext">
+{{i.date | date }}   {{i.name | uppercase }}  {{i.lower | lowercase }}  {{i.curency | currency }}
+</div>
+<input type="search" [(ngModel)]="search">
+
+<div  *ngFor="let j of newtext | filter:search">
+
+  {{j}}
+
+</div>
+
+
