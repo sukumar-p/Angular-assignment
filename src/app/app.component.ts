@@ -10,9 +10,9 @@ import { FormsModule} from '@angular/forms';
 export class AppComponent {
 public newtext:any;
 public rows:any=[];
-public url:any=["../assets/images/image.jpeg","../assets/images/danger.jpeg","../assets/images/crab.jpeg",
-"../assets/images/aws.png","../assets/images/error404.jpg","../assets/images/night.jpg"];
-public displayimage:any=["../assets/images/image.jpeg"];
+public url:any=["../assets/ images/image.jpeg","../assets/ images/danger.jpeg","../assets/ images/crab.jpeg",
+"../assets/ images/aws.png","../assets/ images/error404.jpg","../assets/ images/night.jpg"];
+public displayimage:any=["../assets/ images/image.jpeg"];
 public setimage:boolean=true;
 public i:any=1;
 
@@ -89,13 +89,13 @@ Newjson=[
   ]
 
 
-  buttonclick(){
+  // buttonclick(){
   
-   this.rows.push(this.newtext);
-    this.newtext=null;
+  //  this.rows.push(this.newtext);
+  //   this.newtext=null;
    
-  }
-//   clickFunction(){
+  // }
+   clickFunction(){
 //   //   if(this.setimage){
   
   
@@ -107,10 +107,10 @@ Newjson=[
 //   // }
 
 
-//   this.i<this.url.length ?this.displayimage=this.url[this.i]:this.displayimage=this.url[this.i=0];
-//   this.i++;
+  this.i<this.url.length ?this.displayimage=this.url[this.i]:this.displayimage=this.url[this.i=0];
+  this.i++;
  
-// }
+}
 
 
 }
