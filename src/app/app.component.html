@@ -1,6 +1,6 @@
 <!--The content below is only a placeholder and can be replaced.-->
 
- <!-- <div class="container">
+<!-- <div class="container">
 
 
 
@@ -39,12 +39,12 @@
      </tr> 
     </tbody>
   </table> -->
-     <!-- <tr *ngFor="let data of Newjson;">localStorage.setItem('email',)
+<!-- <tr *ngFor="let data of Newjson;">localStorage.setItem('email',)
        
         <td>
               {{data.name}}  
           </td> -->
-          <!-- <td>
+<!-- <td>
               <ul *ngFor="let item of data.batters.batter;">
                 <li [ngClass]="item.isColor">
                    {{item.type}} 
@@ -80,17 +80,43 @@
                  </ul>
              </td>
      </tr>  -->
-     
-<img src="{{displayimage}}" width="25%" height="400px">
-<button (click)="clickFunction()">display</button>
-   
+
+<!-- <div>
+  <img src="{{displayimage}}" width="25%" height="400px">
+
+ <div>
+  <button (click)="clickFunction()">display</button>
+ </div>
+</div><br>
+
+<div>
+  <input type="text" [(ngModel)]="newtext">
+
+
+  <button (click)="buttonclick()">click me</button>
+
+  <ul *ngFor="let item of rows let i=index">
+    
+    <li style="width:20%"><button (click)="rows.splice(i,1)">x</button>
+      {{item}}
+    </li>
+  </ul>
+</div> -->
+<!-- <div >
+  <h1>active</h1>
+
+  <ul [(ngModel)]="active1">
+    <li>
+      {{active1}}
+    </li>
+  </ul>
+
+</div> -->
+
 
 <!-- <new-component></new-component> -->
 <!-- </div> -->
 
 <div>
-    <router-outlet></router-outlet>
-  </div>
-
-
-
+  <router-outlet></router-outlet>
+</div>

@@ -9,6 +9,7 @@ import { FormsModule} from '@angular/forms';
 })
 export class AppComponent {
 public newtext:any;
+public active1:any=[];
 public rows:any=[];
 public url:any=["../assets/ images/image.jpeg","../assets/ images/danger.jpeg","../assets/ images/crab.jpeg",
 "../assets/ images/aws.png","../assets/ images/error404.jpg","../assets/ images/night.jpg"];
@@ -89,12 +90,13 @@ Newjson=[
   ]
 
 
-  // buttonclick(){
+  buttonclick(){
   
-  //  this.rows.push(this.newtext);
-  //   this.newtext=null;
+   this.rows.push(this.newtext);
+    this.newtext=null;
+    console.log(this.rows)
    
-  // }
+  }
    clickFunction(){
 //   //   if(this.setimage){
   
@@ -111,6 +113,10 @@ Newjson=[
   this.i++;
  
 }
+// clicknew(){
+ 
+//   this.active1.push( this.rows.splice(this.i,1));
+// }
 
 
 }
